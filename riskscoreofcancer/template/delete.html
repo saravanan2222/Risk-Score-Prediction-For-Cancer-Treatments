@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(73, 113, 139);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .rounded-button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #ff4b4b; /* Red color for logout */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it stays on top */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete  A Patient Detail</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- <button type="submit" formaction="{% url 'logout' %}" class="logout-button">Logout</button> -->
+        <div class="form-group">
+            {{ form }}
+        </div>
+        <br><input type="submit" name="" id="" class="rounded-button">
+        
+        <br>
+        <br>
+        <!-- <h3>
+        <textarea name="" id="" cols="80" rows="40">
+            
+    Patient_Id:{{key.m_Patient_Id}}
+    Age :  {{key.m_Age}}
+    GENDER  :  {{key.m_Gender}}
+    BMI :  {{key.m_BMI}}
+    BSA   :  {{key.m_BSA}}
+    ECOG:{{key.m_ECOG}}
+    Addiction to Tabacco/alcohol: {{key.m_Substanceabuse}}
+    Diabetes CI:{{key.m_DiabetesCI}}
+    HeartDisease CI:{{key.m_HeartDiseaseCI}}
+    Ejection Fraction:{{key.m_EjectionFraction}}
+    WeightLoss:{{key.m_Weightloss}}
+    Haemoglobin value:{{key.m_Haemoglobin}}
+    WBC:{{key.m_WBC}}
+    ANC:{{key.m_ANC}}
+    Platlet Count:{{key.m_platletCount}}
+    Sr:Creatinine:{{key.m_Creatininel}}
+    Creatinine clearance:{{key.m_Creatininec}}
+    Billirubin(mg):{{key.m_Bilirubin}}
+    AST/ALT:{{key.m_AST}}
+    Albumin:{{key.m_Albumin}}
+    Spo2%:{{key.m_SpO2}}
+    Heart Rate:{{key.m_Heartrate}}
+    Prior Hospitalization:{{key.m_priorHospitalization}}
+    BP:{{key.m_BP}}
+    Distance:A patient can walk(in mtrs):{{key.m_Walking}}
+    Class of Chemo Agents:{{key.m_Drug}}
+    Number of chemo agents:{{key.m_Chemoagent}}
+    Dose Intensity:{{key.m_Dosingagent}}
+    Setting:{{key.m_Setting}}
+    Social Support:{{key.m_SocialSupport}}
+    Distance from home(km):{{key.m_DistanceFH}}
+    Mental State:{{key.m_MentalState}}
+    Cancer Type:{{key.m_CancerType}}
+    Grade:{{key.m_Gradeg}}
+    Stage IV Burden:{{key.m_StageBurden}}
+    Previos Chemo Tolerance:{{key.m_ChemoTolerance}}
+    PS During Chemo:{{key.m_DuringChemo}}
+    Cycle:{{key.m_Cycle}}
+
+        </textarea>
+    </h3> -->
+        </form>
+        <p align="center"><b><a href="home.html">Back to home</a></b></p>
+    </div>
+</body>
+</html>

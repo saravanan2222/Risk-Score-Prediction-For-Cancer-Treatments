@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(161, 208, 214);
+            color: rgba(90, 67, 184, 0.973);
+        }
+
+        table {
+            border-spacing: 0px;
+        }
+
+        h1 {
+            color: darkcyan;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Patient's Report</h1>
+    <table align="center" border=3>
+        <tr>
+            <td>Patient Id</td>
+            <td>{{post.0}}</td>
+        </tr>
+        <tr>
+            <td>Patient Name</td>
+            <td>{{post.1}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{post.2}}</td>
+            <td>{{ l.0 }}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{post.3}}</td>
+            <td>{{ l.1 }}</td>
+        </tr>
+        <tr>
+            <td>BMI</td>
+            <td>{{post.4}}</td>
+            <td>{{ l.2 }}</td>
+        </tr>
+        <tr>
+            <td>BSA</td>
+            <td>{{post.5}}</td>
+            <td>{{ l.3 }}</td>
+        </tr>
+        <tr>
+            <td>ECOG</td>
+            <td>{{post.6}}</td>
+            <td>{{ l.4 }}</td>
+        </tr>
+        <tr>
+            <td>Addiction to Tabacco/alcohol</td>
+            <td>{{post.7}}</td>
+            <td>{{ l.5 }}</td>
+        </tr>
+        <tr>
+            <td>Diabetes CI</td>
+            <td>{{post.8}}</td>
+            <td>{{ l.6 }}</td>
+        </tr>
+        <tr>
+            <td>HeartDisease</td>
+            <td>{{post.9}}</td>
+            <td>{{ l.7 }}</td>
+        </tr>
+        <tr>
+            <td>Ejection Fraction</td>
+            <td>{{post.10}}</td>
+            <td>{{ l.8 }}</td>
+        </tr>
+        <tr>
+            <td>WeightLoss</td>
+            <td>{{post.11}}</td>
+            <td>{{ l.9 }}</td>
+        </tr>
+        <tr>
+            <td>Haemoglobin value</td>
+            <td>{{post.12}}</td>
+            <td>{{ l.10 }}</td>
+        </tr>
+        <tr>
+            <td>WBC</td>
+            <td>{{post.13}}</td>
+            <td>{{ l.11 }}</td>
+        </tr>
+        <tr>
+            <td>ANC</td>
+            <td>{{post.14}}</td>
+            <td>{{ l.12 }}</td>
+        </tr>
+        <tr>
+            <td>Platlet Count</td>
+            <td>{{post.15}}</td>
+            <td>{{ l.13 }}</td>
+        </tr>
+        <tr>
+            <td>Sr:Creatinine</td>
+            <td>{{post.16}}</td>
+            <td>{{ l.14 }}</td>
+        </tr>
+        <tr>
+            <td>Creatinine clearance</td>
+            <td>{{post.17}}</td>
+            <td>{{ l.15 }}</td>
+        </tr>
+        <tr>
+            <td>Billirubin(mg)</td>
+            <td>{{post.18}}</td>
+            <td>{{ l.16 }}</td>
+        </tr>
+        <tr>
+            <td>AST/ALT</td>
+            <td>{{post.19}}</td>
+            <td>{{ l.17 }}</td>
+        </tr>
+        <tr>
+            <td>Albumin</td>
+            <td>{{post.20}}</td>
+            <td>{{ l.18 }}</td>
+        </tr>
+        <tr>
+            <td>Spo2%</td>
+            <td>{{post.21}}</td>
+            <td>{{ l.19 }}</td>
+        </tr>
+        <tr>
+            <td>Heart Rate</td>
+            <td>{{post.22}}</td>
+            <td>{{ l.20 }}</td>
+        </tr>
+        <tr>
+            <td>Prior Hospitalization</td>
+            <td>{{post.23}}</td>
+            <td>{{ l.21 }}</td>
+        </tr>
+        <tr>
+            <td>BP</td>
+            <td>{{post.24}}</td>
+            <td>{{ l.22 }}</td>
+        </tr>
+        <tr>
+            <td>Distance:A patient can walk(in mtrs)</td>
+            <td>{{post.25}}</td>
+            <td>{{ l.23 }}</td>
+        </tr>
+        <tr>
+            <td>Class of Chemo Agents</td>
+            <td>{{post.26}}</td>
+            <td>{{ l.24 }}</td>
+        </tr>
+        <tr>
+            <td>Number of chemo agents</td>
+            <td>{{post.27}}</td>
+            <td>{{ l.25 }}</td>
+        </tr>
+        <tr>
+            <td>Dose Intensity</td>
+            <td>{{post.28}}</td>
+            <td>{{ l.26 }}</td>
+        </tr>
+        <tr>
+            <td>Setting</td>
+            <td>{{post.29}}</td>
+            <td>{{ l.27 }}</td>
+        </tr>
+        <tr>
+            <td>Social Support</td>
+            <td>{{post.30}}</td>
+            <td>{{ l.28 }}</td>
+        </tr>
+        <tr>
+            <td>Distance from home(km)</td>
+            <td>{{post.31}}</td>
+            <td>{{ l.29 }}</td>
+        </tr>
+        <tr>
+            <td>Mental State</td>
+            <td>{{post.32}}</td>
+            <td>{{ l.30 }}</td>
+        </tr>
+        <tr>
+            <td>Cancer Type</td>
+            <td>{{post.33}}</td>
+            <td>{{ l.31 }}</td>
+        </tr>
+        <tr>
+            <td>Grade</td>
+            <td>{{post.34}}</td>
+            <td>{{ l.32 }}</td>
+        </tr>
+        <tr>
+            <td>Stage IV Burden</td>
+            <td>{{post.35}}</td>
+            <td>{{ l.33 }}</td>
+        </tr>
+        <tr>
+            <td>Previos Chemo Tolerance</td>
+            <td>{{post.36}}</td>
+            <td>{{ l.34 }}</td>
+        </tr>
+        <tr>
+            <td>PS During Chemo</td>
+            <td>{{post.37}}</td>
+            <td>{{ l.35 }}</td>
+        </tr>
+        <tr>
+            <td>Cycle</td>
+            <td>{{post.38}}</td>
+            <td>{{ l.36 }}</td>
+        </tr>
+    </table>
+    </textarea>
+
+    <h2 align="center">Result : {{ l.37 }}</h2>
+
+    <h2 align="center">Therapy Suggested : {{ l.38 }}</h2>
+
+    <p align="center"><b><a href="home.html">Back to home</a></b></p>
+</body>
+
+</html>

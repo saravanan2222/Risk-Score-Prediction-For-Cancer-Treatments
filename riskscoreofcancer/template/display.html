@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(73, 113, 139);
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>DataBase</h1>
+    <table align="center" border="2" cellpadding="2">
+        <thead>
+            <tr>
+                <td>Patient Id</td>
+                <td>Patient Name</td>
+                <td>Age</td>
+                <td>GENDER</td>
+                <td>BMI</td>
+                <td>BSA</td>
+                <td>ECOG</td>
+                <td>Substance Abuse</td>
+                <td>Diabetes CI</td>
+                <td>HeartDisease</td>
+                <td>Ejection Fraction</td>
+                <td>WeightLoss</td>
+                <td>Haemoglobin value</td>
+                <td>WBC</td>
+                <td>ANC</td>
+                <td>Platlet Count</td>
+                <td>Sr:Creatinine</td>
+                <td>Creatinine clearance</td>
+                <td>Billirubin(mg)</td>
+                <td>AST/ALT</td>
+                <td>Albumin</td>
+                <td>Spo2%</td>
+                <td>Heart Rate</td>
+                <td>Prior Hospitalization</td>
+                <td>BP</td>
+                <td>Distance:A patient can walk(in mtrs)</td>
+                <td>Class of Chemo Agents</td>
+                <td>Number of chemo agents</td>
+                <td>Dose Intensity</td>
+                <td>Setting</td>
+                <td>Social Support</td>
+                <td>Distance from home(km)</td>
+                <td>Mental State</td>
+                <td>Cancer Type</td>
+                <td>Grade</td>
+                <td>Stage IV Burden</td>
+                <td>Previos Chemo Tolerance</td>
+                <td>PS During Chemo</td>
+                <td>Cycle</td>
+                <td>Therapy Suggested</td>
+            </tr>
+        </thead>
+        {% for post in form %}
+        <tbody>
+            <tr>
+                <td>{{post.m_Patient_Id}}</td>
+                <td>{{post.m_Patient_name}}</td>
+                <td>{{post.m_Age}}</td>
+                <td>{{post.m_Gender}}</td>
+                <td>{{post.m_BMI}}</td>
+                <td>{{post.m_BSA}}</td>
+                <td>{{post.m_ECOG}}</td>
+                <td>{{post.m_Substanceabuse}}</td>
+                <td>{{post.m_DiabetesCI}}</td>
+                <td>{{post.m_HeartDiseaseCI}}</td>
+                <td>{{post.m_EjectionFraction}}</td>
+                <td>{{post.m_Weightloss}}</td>
+                <td>{{post.m_Haemoglobin}}</td>
+                <td>{{post.m_WBC}}</td>
+                <td>{{post.m_ANC}}</td>
+                <td>{{post.m_PlatletCount}}</td>
+                <td>{{post.m_Creatininel}}</td>
+                <td>{{post.m_Creatininec}}</td>
+                <td>{{post.m_Bilrubin}}</td>
+                <td>{{post.m_AST}}</td>
+                <td>{{post.m_Albumin}}</td>
+                <td>{{post.m_SpO2}}</td>
+                <td>{{post.m_Heartrate}}</td>
+                <td>{{post.m_PriorHospitalization}}</td>
+                <td>{{post.m_BP}}</td>
+                <td>{{post.m_Walking}}</td>
+                <td>{{post.m_Drug}}</td>
+                <td>{{post.m_Chemoagent}}</td>
+                <td>{{post.m_Dosingagent}}</td>
+                <td>{{post.m_Setting}}</td>
+                <td>{{post.m_SocialSupport}}</td>
+                <td>{{post.m_DistanceFH}}</td>
+                <td>{{post.m_MentalState}}</td>
+                <td>{{post.m_CancerType}}</td>
+                <td>{{post.m_Gradeg}}</td>
+                <td>{{post.m_StageBurden}}</td>
+                <td>{{post.m_ChemoTolerance}}</td>
+                <td>{{post.m_DuringChemo}}</td>
+                <td>{{post.m_Cycle}}</td>
+                <td>{{post.m_Therapy_Suggested}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    <p align="center"><b><a href="home.html">Back to home</a></b></p>
+    <!-- <textarea name="" id="" cols="50" rows="20">
+        {% for post in form %}
+        Patient Id:{{post.m_Patient_Id}}
+        Age :  {{post.m_Age}}
+        GENDER  :  {{post.m_Gender}}
+        BMI :  {{post.m_BMI}}
+        BSA   :  {{post.m_BSA}}
+        ECOG:{{post.m_ECOG}}
+        Addiction to Tabacco/alcohol: {{post.m_Substanceabuse}}
+        Diabetes CI:{{post.m_DiabetesCI}}
+        HeartDisease:{{post.m_HeartDiseaseCI}}
+        Ejection Fraction:{{post.m_EjectionFraction}}
+        WeightLoss:{{post.m_Weightloss}}
+        Haemoglobin value:{{post.m_Haemoglobin}}
+        WBC:{{post.m_WBC}}
+        ANC:{{post.m_ANC}}
+        Platlet Count:{{post.m_platletCount}}
+        Sr:Creatinine:{{post.m_Creatininel}}
+        Creatinine clearance:{{post.m_Creatininec}}
+        Billirubin(mg):{{post.m_Bilirubin}}
+        AST/ALT:{{post.m_AST}}
+        Albumin:{{post.m_Albumin}}
+        Spo2%:{{post.m_SpO2}}
+        Heart Rate:{{post.m_Heartrate}}
+        Prior Hospitalization:{{post.m_priorHospitalization}}
+        BP:{{post.m_BP}}
+        Distance:A patient can walk(in mtrs):{{post.m_Walking}}
+        Class of Chemo Agents:{{post.m_Drug}}
+        Number of chemo agents:{{post.m_Chemoagent}}
+        Dose Intensity:{{post.m_Dosingagent}}
+        Setting:{{post.m_Setting}}
+        Social Support:{{post.m_SocialSupport}}
+        Distance from home(km):{{post.m_DistanceFH}}
+        Mental State:{{post.m_MentalState}}
+        Cancer Type:{{post.m_CancerType}}
+        Grade:{{post.m_Gradeg}}
+        Stage IV Burden:{{post.m_StageBurden}}
+        Previos Chemo Tolerance:{{post.m_ChemoTolerance}}
+        PS During Chemo:{{post.m_DuringChemo}}
+        Cycle:{{post.m_Cycle}} -->
+        <!-- {% endfor %} -->
+    </textarea>
+    
+    
+</body>
+</html>

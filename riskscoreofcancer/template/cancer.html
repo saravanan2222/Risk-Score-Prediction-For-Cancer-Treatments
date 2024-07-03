@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>cancer research</title>
+    <style>
+        label{
+        display: inline-block;
+        width: 150px;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="result.jsp" method="post">
+        <label for="Age">Age</label>
+        <input type="text" name="Age"><br><br>
+        <label for="Gender">Gender</label>
+        <select name="Gender" id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+        <label for="BMI">BMI</label>
+        <input type="text" name="BMI"><br>       
+        <label for="BSA">BSA</label>
+        <input type="text" name="BSA"><br>
+        <label for="ECOG">ECOG</label>
+        <select name="ECOG" id="ECOG">
+            <option value="0">Fully active</option>
+            <option value="1">restricted in strenous activity</option>
+            <option value="2">capable of self care</option>
+            <option value="3">capable of limited self care</option>
+            <option value="4">Completely disabled</option>
+            <option value="5">Dead</option>
+        </select><br>
+        <label for="Substanceabuse">Substance abuse</label>
+        <select name="Substanceabuse" id="Substanceabuse">
+            <option value="0">Teetotaler</option>
+            <option value="1">Non-teetotaler</option>
+        </select><br>
+        <label for="DiabetesCI">DiabetesCI</label>
+        <select name="DiabetesCI" id="DiabetesCI">
+            <option value="0">No Diabetes</option>
+            <option value="1">Good control but no influence</option>
+            <option value="2">Controlled but partially influenced</option>
+            <option value="3">Poor control and severly influenced</option>
+        </select><br>
+        <label for="HeartDiseaseCI">HeartDiseaseCI</label>
+        <select name="HeartDiseaseCI" id="HeartDiseaseCI">
+            <option value="0">No heart Disease</option>
+            <option value="1">Diagnosed but good pumping</option>
+            <option value="2">Bypass but good pumping</option>
+            <option value="3">Bypass but bad pumping</option>
+        </select><br>
+        <label for="EjectionFraction">EjectionFraction</label>
+        <input type="text" name="EjectionFraction"><br>
+        <label for="Weightloss">Weightloss</label>
+        <input type="text" name="Weightloss"><br>
+        <label for="Haemoglobin">Haemoglobin</label>
+        <input type="text" name="Haemoglobin"><br>
+        <label for="WBC">WBC</label>
+        <input type="text" name="WBC"><br>
+        <label for="ANC">ANC</label>
+        <input type="text" name="ANC"><br>
+        <label for="PlatletCount">PlatletCount</label>
+        <input type="text" name="PlatletCount"><br>
+        <label for="Creatininel">Creatinine level</label>
+        <input type="text" name="Creatininel"><br>
+        <label for="Creatininec">Creatinine clearance</label>
+        <input type="text" name="Creatininec"><br>
+        <label for="Bilrubin">Bilrubin</label>
+        <input type="text" name="Bilrubin"><br>
+        <label for="AST">AST</label>
+        <input type="text" name="AST"><br>
+        <label for="Albumin">Albumin</label>
+        <input type="text" name="Albumin"><br>
+        <label for="SpO2">SpO2</label>
+        <input type="text" name="SpO2"><br>
+        <label for="Heartrate">Heartrate</label>
+        <input type="text" name="Heartrate"><br>
+        <label for="PriorHospitalization">Prior Hospitalization</label>
+        <select name="PriorHospitalization" id="PriorHospitalization">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="BP">BP</label>
+        <input type="text" name="BP"><br>
+        <label for="Walking">Walking</label>
+        <select name="Walking" id="Walking">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="Drug">Antineoplastic drug</label>
+        <input type="text" name="Drug"><br>
+        <label for="Chemoagent">Chemoagent</label>
+        <input type="text" name="Chemoagent"><br>
+        <label for="Dosingagent">Dosingagent</label>
+        <input type="text" name="Dosingagent"><br>
+        <label for="Setting">Setting</label>
+        <input type="text" name="Setting"><br>
+        <label for="SocialSupport">SocialSupport</label>
+        <select name="SocialSupport" id="SocialSupport">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="MentalState">Mental state</label>
+        <select name="MentalState" id="MentalState">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Bad">Bad</option>
+        </select><br>
+        <label for="CancerType">CancerType</label>
+        <input type="text" name="CancerType"><br>
+        <label for="Grade">Grade</label>
+        <input type="text" name="Gradeg"><br>
+        <label for="StageBurden">StageBurden</label>
+        <input type="text" name="StageBurden"><br>
+        <label for="ChemoTolerance">ChemoTolerance</label>
+        <input type="text" name="ChemoTolerance"><br>
+        <label for="DuringChemo">DuringChemo</label>
+        <input type="text" name="DuringChemo"><br>
+        <label for="Cycle">Cycle</label>
+        <input type="text" name="Cycle"><br>
+        <input type="submit" name="Submit">
+    </form>
+</body>
+
+</html>

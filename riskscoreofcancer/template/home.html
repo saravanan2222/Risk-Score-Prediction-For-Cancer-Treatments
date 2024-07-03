@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        /* Your CSS rules go here */
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-color: rgb(73, 113, 139);
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        h1 {
+            color: #000;
+            font-size: 40px;
+        }
+        input[type="submit"] {
+            width: 150px; 
+            height: 50px; 
+            font-size: 16px; 
+            
+        }
+        /* #cornerImage {
+            position: fixed; 
+            bottom: 0;
+            right: 0;
+            width: 900px; 
+            height: 500px; 
+        } */
+
+        /* Add more styles as needed */
+        .rounded-button {
+            padding: 10px 20px;
+            border-radius: 10px; /* Adjust the border-radius to change the amount of rounding */
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #ff4b4b; /* Red color for logout */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it stays on top */
+        }
+    </style>
+</head>
+<body>
+    <form method="post" class="bc">
+
+        {% csrf_token %}
+        <center><h1>Risk Score Prediction For Cancer Treatment</h1>
+        <!-- <img id="cornerImage" src="https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.jpg?s=1024x1024&w=is&k=20&c=Nrav3s-suXQFrpNw3jhudjrMX_6L4121zgSD5oB8QA8=" alt="Image at bottom-Right Corner"> -->
+        <button type="submit" formaction="{% url 'logout' %}" class="logout-button">Logout</button>
+
+            <br>
+            <table align="center" border=3>
+                <tr>
+                    <td><h3>Give Input For Your Risk Score</h3></td>
+                    <td><input type="submit" value="Risk Score" name="in" class="rounded-button"></td>
+                </tr>
+                <tr>
+                    <td><h3>Update based on your patient ID</h3></td>
+                    <td><input type="submit" value="Update" name="up" class="rounded-button"></td>
+                </tr>
+                <tr>
+                    <td><h3>View Data Base</h3></td>
+                    <td><input type="submit" value="Display" name="dis" class="rounded-button"></td>
+                </tr>
+                <tr>
+                    <td><h3>Search Based On Your Patient Id</h3></td>
+                    <td><input type="submit" value="Search" name="se" class="rounded-button"></td>
+                </tr>
+                <tr>
+                    <td><h3>Delete a Record Based On Your Patient Id</h3></td>
+                    <td><input type="submit" value="Delete" name="x" class="rounded-button"></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+</html>
